@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted(){
-	this.axios.post("http://112.65.247.73:8089/DashboardAPI/GetApplyStatic").then(
+	this.axios.post("https://xcx.vcredit.com/creditquery/credit/sendReport").then(
 		function(data){
 			console.log(data)
 		}
