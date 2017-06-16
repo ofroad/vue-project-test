@@ -27,6 +27,13 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted(){
+	this.axios.post("http://112.65.247.73:8089/DashboardAPI/GetApplyStatic").then(
+		function(data){
+			console.log(data)
+		}
+	)
   }
 }
 </script>
